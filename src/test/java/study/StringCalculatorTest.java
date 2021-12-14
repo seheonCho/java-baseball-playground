@@ -129,7 +129,16 @@ class StringCalculatorTest {
         assertThat(cal.getResult()).isNotEqualTo(4);
     }
 
-    //TODO Operator, EnumOperator 단위테스트 추가하기
+    @ParameterizedTest
+    @ValueSource(strings = "-1 * -2 + 2 - -9")
+    void 음수포함계산(String expression) {
+        cal.setExpression(expression);
+        cal.calculate();
+
+        assertThat(cal.getResult()).isEqualTo(-5);
+    }
+
+    //TODO Operator, EnumOperator 단위테스트 추가하가
 
 
 }
