@@ -129,6 +129,7 @@ class StringCalculatorTest {
         assertThat(cal.getResult()).isNotEqualTo(4);
     }
 
+    //TODO Operator, EnumOperator 단위테스트 추가하기
 
 
 }
