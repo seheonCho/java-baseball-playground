@@ -63,22 +63,18 @@ public class StringCalculator {
 
         if (this.operator.isPlusOperator(operator)) {
             sumCalculate(num);
-            return;
         }
 
         if (this.operator.isMinusOperator(operator)) {
             minusCalculate(num);
-            return;
         }
 
         if (this.operator.isMultiplyOperator(operator)) {
             multiplyCalculate(num);
-            return;
         }
 
         if (this.operator.isDivideOperator(operator)) {
             divideCalculate(num);
-            return;
         }
 
     }
@@ -90,22 +86,18 @@ public class StringCalculator {
 
             if (operator.isPlusOperator(expression[i])) {
                 operators.add(expression[i].charAt(0));
-                return;
             }
 
             if (operator.isMinusOperator(expression[i])) {
                 operators.add(expression[i].charAt(0));
-                return;
             }
 
             if (operator.isMultiplyOperator(expression[i])) {
                 operators.add(expression[i].charAt(0));
-                return;
             }
 
             if (operator.isDivideOperator(expression[i])) {
                 operators.add(expression[i].charAt(0));
-                return;
             }
 
         }
