@@ -138,7 +138,7 @@ class StringCalculatorTest {
         assertThat(cal.getResult()).isEqualTo(-5);
     }
 
-    //TODO Operator, EnumOperator 단위테스트 추가하가
+    //TODO Operator, EnumOperator 단위테스트 추가하기
 
 
 }
