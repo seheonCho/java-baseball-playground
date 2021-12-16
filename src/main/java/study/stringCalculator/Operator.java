@@ -1,4 +1,4 @@
-package study;
+package study.stringCalculator;
 
 public class Operator {
 

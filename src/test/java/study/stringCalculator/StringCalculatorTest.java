@@ -1,4 +1,4 @@
-package study;
+package study.stringCalculator;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -135,10 +135,16 @@ class StringCalculatorTest {
         cal.setExpression(expression);
         cal.calculate();
 
-        assertThat(cal.getResult()).isEqualTo(-5);
+        assertThat(cal.getResult()).isEqualTo(13);
     }
 
-    //TODO Operator, EnumOperator 단위테스트 추가하기
+    @ParameterizedTest
+    @ValueSource(strings = "-1 + -1 * 2")
+    void 음수포함계산_2(String expression) {
+        cal.setExpression(expression);
+        cal.calculate();
 
+        assertThat(cal.getResult()).isEqualTo(-4);
+    }
 
 }

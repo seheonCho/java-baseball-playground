@@ -1,4 +1,4 @@
-package study;
+package study.stringCalculator;
 
 import java.util.LinkedList;
 import java.util.List;
