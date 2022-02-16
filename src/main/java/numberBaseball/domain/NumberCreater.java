@@ -6,17 +6,15 @@ import java.util.Random;
 
 public class NumberCreater {
 
+    final static Random random = new Random();
     List<Integer> numbers;
 
-    Random random = new Random();
-
     NumberCreater() {
-        clearNumbers();
-        this.numbers = new ArrayList<>(Game.NUMBER_OF_NUMBERS);
-        setRandomNumbers(random);
+        this.numbers = new ArrayList<>(Game.NUMBERS_OF_GAME);
+        setRandomNumbers(numbers);
     }
 
-    private void setRandomNumbers(Random random) {
+    private void setRandomNumbers(List<Integer> numbers) {
 
         for (int i=0; i<numbers.size(); i++) {
             setNumber(i, random.nextInt(9) + 1);
@@ -26,10 +24,6 @@ public class NumberCreater {
 
     private void setNumber(int index, int number) {
         numbers.set(index, number);
-    }
-
-    private void clearNumbers() {
-        numbers.clear();
     }
 
     public List<Integer> getNumbers() {
